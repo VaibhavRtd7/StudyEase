@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AdminLayout from './components/AdminLayout';
-import TutorLayout from './components/TutorLayout';
-import Layout from './components/Layout';
+import AdminLayout from './components/Layout/AdminLayout';
+import TutorLayout from './components/Layout/TutorLayout';
+import Layout from './components/Layout/Layout';
 
 function App() {
 
