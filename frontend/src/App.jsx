@@ -1,13 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminLayout from './components/AdminLayout';
+import TutorLayout from './components/TutorLayout';
+import Layout from './components/Layout';
 
 function App() {
 
   return (
     <>
-      <div className='flex items-center justify-center h-screen'> 
-        <div className="font-bold text-xl"> 
-              StudyEase
-        </div>
-      </div>
+       <BrowserRouter> 
+          <Routes>
+               <Route path="/admin" element={< AdminLayout/>} />         
+               <Route path="/tutor" element={< TutorLayout/>} />         
+               <Route path="/*" element={< Layout/>} />         
+          </Routes>
+       </BrowserRouter>
     </>
   )
 }
